@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --montserrat: 'Montserrat', sans-serif;
+    --nunito: 'Nunito Sans', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --work: 'Work Sans', sans-serif;
+}
+
+/* Header Starting */
+
+header {
+    padding: 18px 0;
+}
+
+header .logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.navbar-toggler {
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+header .navbar .navbar-nav a {
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 12px;
+    color: #191919;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 500ms;
+    margin-left: 33px;
+}
+
+header .navbar .navbar-nav .active {
+    color: #007d2f !important;
+}
+
+header .navbar .navbar-nav a:hover {
+    color: #007d2f !important;
+}
+
+/* Header To Be Continent */
+
+/* Header To Be Continent */
+
+/* Section Starting */
+
+section .title {
+    background-color: #007d2f;
+    text-align: center;
+    width: 100%;
+}
+
+section .title h1 {
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 30px;
+    color: #171717;
+    padding-top: 115px;
+}
+
+section .title p {
+    font-weight: 500;
+    font-family: var(--roboto);
+    font-size: 17px;
+    color: #fefefe;
+    line-height: 27px;
+    margin-top: 32px;
+    padding-bottom: 97px;
+}
+
+section .album .box img {
+    width: 340px;
+    height: 300px;
+}
+
+.img-fuild {
+    width: 100%;
+}
+
+section .album .box {
+    position: relative;
+}
+
+section .album .box .icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition: 900ms;
+    cursor: pointer;
+}
+
+.icon .fa {
+    padding-top: 43%;
+    font-size: 35px;
+    color: #fff;
+    opacity: 0;
+}
+
+section .album .box:hover .fa {
+    opacity: 1;
+}
+
+section .album .box:hover .icon {
+    background-color: rgba(58, 131, 91, .75);
+}
+
+/* Footer Starting */
+
+footer {
+    background-color: #141414;
+}
+
+footer .row {
+    padding: 100px 0px;
+}
+
+footer .row h2 {
+    font-weight: 500;
+    font-family: var(--montserrat);
+    font-size: 18px;
+    color: #fff;
+}
+
+footer .row p {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: var(--montserrat);
+    color: #bcbcbc;
+    margin-top: 28px;
+}
+
+footer .row a {
+    font-weight: 400;
+    font-family: var(--nunito);
+    font-size: 15px;
+    color: #bcbcbc;
+    text-align: center;
+}
+
+footer .row button {
+    border: none;
+    background: transparent;
+    text-align: left;
+    font-weight: 400;
+    font-family: var(--work);
+    font-size: 15px;
+    color: #bcbcbc;
+    margin-top: 10px;
+}
+
+footer .row ul li a {
+    font-weight: 400;
+    font-family: var(--nunito);
+    font-size: 17px;
+    color: #bcbcbc;
+    line-height: 24px;
+}
+
+@media (min-width:992px) {
+    section .section-album .album .top-album {
+        justify-content: center;
+    }
+    section .section-album .album .center-album {
+        justify-content: center;
+    }
+    section .section-album .album .bottom-album {
+        justify-content: center;
+    }
+}
+
+@media (min-width:768px)and (max-width:991px) {
+    section .section-album .album .top-album {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section .section-album .album .center-album {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section .section-album .album .bottom-album {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:767px) {
+    section .title h1 {
+        font-size: 28px;
+        padding-top: 80px;
+    }
+    section .title p {
+        font-size: 16px;
+        margin-top: 28px;
+        padding-bottom: 50px;
+    }
+    /* Footer  */
+    footer .col-12 {
+        text-align: center;
+    }
+    /* Footer ul */
+    footer .footer-ul {
+        margin-top: 30px;
+        text-align: center;
+    }
+    @media (max-width:575px) {
+        section .title h1 {
+            font-size: 25px;
+            padding-top: 40px;
+        }
+        section .title p {
+            font-size: 14px;
+            margin-top: 20px;
+            padding-bottom: 30px;
+            font-weight: 100;
+            line-height: 22px;
+        }
+        section .section-album  .album .top-album {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section .section-album .album .center-album {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        section .section-album .album .bottom-album {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        footer .footer-ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        footer .footer-ul ul {
+            padding: 0;
+        }
+        footer .col-12 {
+            padding: 50px 0px 20px 0px
+        }
+    }
+}
